@@ -16,4 +16,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Groovy script
-        run: groovy scripts/main.groovy
+        run: gradle --quiet --init-script scripts/main.groovy help
