@@ -1,0 +1,2 @@
+// build.gradle
+tasks.register('runGroovy') { doLast { Object.class.forName('groovy.ui.GroovyMain').main('main.groovy') } }
