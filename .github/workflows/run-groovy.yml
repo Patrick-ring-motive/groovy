@@ -16,4 +16,5 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Groovy script
-        run: gradle --quiet build.gradle
+        run: gradle -q -b "" eval -E "new GroovyShell().run(new File('scripts/main.groovy'))"
+
